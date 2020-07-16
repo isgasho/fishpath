@@ -7,3 +7,30 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+foreign-types = "0.3"
+gl = "0.14"
+metal = "0.18"
+objc = "0.2"
+sdl2 = "0.33"
+sdl2-sys = "0.33"
+
+
+pathfinder_canvas = { git = "https://github.com/servo/pathfinder/", features = ["pf-text"] }
+pathfinder_color = { git = "https://github.com/servo/pathfinder/" }
+pathfinder_content = { git = "https://github.com/servo/pathfinder/" }
+pathfinder_geometry = { git = "https://github.com/servo/pathfinder/" }
+pathfinder_gl = { git = "https://github.com/servo/pathfinder/" }
+pathfinder_gpu = { git = "https://github.com/servo/pathfinder/" }
+# pathfinder_metal = { git = "https://github.com/servo/pathfinder/" }
+pathfinder_renderer = { git = "https://github.com/servo/pathfinder/" }
+pathfinder_resources = { git = "https://github.com/servo/pathfinder/" }
+
+# pathfinder_canvas = { version = "0.5.0", features = ["pf-text"] }
+# pathfinder_color = { version = "0.5" }
+# pathfinder_content = { version = "0.5" }
+# pathfinder_geometry = { version = "0.5" }
+# pathfinder_gl = { version = "0.5" }
+# pathfinder_metal = { version = "0.5" }
+# pathfinder_gpu =  { version = "0.5" }
+# pathfinder_renderer = { version = "0.5" }
+# pathfinder_resources =  { version = "0.5" }
