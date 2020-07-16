@@ -11,10 +11,10 @@
 // use image;
 use arrayvec::ArrayVec;
 use euclid::default::Size2D;
-use std::collections::VecDeque;
-use std::f32::consts::PI;
 use pathfinder_resources::ResourceLoader;
 use pathfinder_simd::default::F32x2;
+use std::collections::VecDeque;
+use std::f32::consts::PI;
 use std::iter;
 
 const PI_2: f32 = PI * 2.0;
@@ -28,8 +28,8 @@ const GRAPH_HEIGHT: f32 = 35.0;
 const GRAPH_HISTORY_COUNT: usize = 100;
 
 static FONT_NAME_REGULAR: &'static str = "Roboto-Regular";
-static FONT_NAME_BOLD:    &'static str = "Roboto-Bold";
-static FONT_NAME_EMOJI:   &'static str = "NotoEmoji";
+static FONT_NAME_BOLD: &'static str = "Roboto-Bold";
+static FONT_NAME_EMOJI: &'static str = "NotoEmoji";
 
 static PARAGRAPH_TEXT: &'static str = "This is a longer chunk of text.
 
@@ -42,8 +42,8 @@ position.";
 use foreign_types::ForeignTypeRef;
 use metal::{CAMetalLayer, CoreAnimationLayerRef};
 use pathfinder_canvas::{Canvas, CanvasFontContext, CanvasRenderingContext2D, LineJoin, Path2D};
-use pathfinder_color::{ColorF, ColorU, rgbau, rgbf, rgbu};
 use pathfinder_canvas::{TextAlign, TextBaseline};
+use pathfinder_color::{rgbau, rgbf, rgbu, ColorF, ColorU};
 use pathfinder_content::fill::FillRule;
 use pathfinder_content::gradient::Gradient;
 use pathfinder_content::outline::ArcDirection;
@@ -54,7 +54,7 @@ use pathfinder_geometry::line_segment::LineSegment2F;
 use pathfinder_geometry::rect::RectF;
 use pathfinder_geometry::transform2d::Transform2F;
 use pathfinder_geometry::util;
-use pathfinder_geometry::vector::{Vector2F, vec2f, vec2i};
+use pathfinder_geometry::vector::{vec2f, vec2i, Vector2F};
 use pathfinder_metal::MetalDevice;
 use pathfinder_renderer::concurrent::rayon::RayonExecutor;
 use pathfinder_renderer::concurrent::scene_proxy::SceneProxy;
