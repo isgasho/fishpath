@@ -9,9 +9,13 @@
 // except according to those terms.
 
 // use image;
+use arrayvec::ArrayVec;
+use euclid::default::Size2D;
 use std::collections::VecDeque;
 use std::f32::consts::PI;
 use pathfinder_resources::ResourceLoader;
+use pathfinder_simd::default::F32x2;
+use std::iter;
 
 const PI_2: f32 = PI * 2.0;
 const FRAC_PI_2_3: f32 = PI * 2.0 / 3.0;
@@ -37,7 +41,7 @@ position.";
 
 use foreign_types::ForeignTypeRef;
 use metal::{CAMetalLayer, CoreAnimationLayerRef};
-use pathfinder_canvas::{Canvas, CanvasFontContext, Path2D, CanvasRenderingContext2D};
+use pathfinder_canvas::{Canvas, CanvasFontContext, CanvasRenderingContext2D, LineJoin, Path2D};
 use pathfinder_color::{ColorF, ColorU, rgbau, rgbf, rgbu};
 use pathfinder_canvas::{TextAlign, TextBaseline};
 use pathfinder_content::fill::FillRule;
